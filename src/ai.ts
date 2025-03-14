@@ -1,3 +1,3 @@
-// import OpenAI from 'openai'
+import OpenAI from 'openai'
 
-// export const openai = new OpenAI()
+export const openai = new OpenAI()
