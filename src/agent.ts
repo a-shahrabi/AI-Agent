@@ -38,5 +38,7 @@ export const runAgent = async ({ turns = 10, userMessage, tools = [] }: AgentCon
         }
       }
     }
-  } 
+  } catch (error) {
+    console.error('Error running agent:', error);
+  }
 };
