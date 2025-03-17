@@ -3,7 +3,6 @@ import { runLLM } from './llm';
 import { z } from 'zod';
 import { runTool } from './toolRunner';
 import { addMessages, getMessages, saveToolResponse } from './memory';
-import { logMessage, showLoader } from './ui';
 
 interface AgentConfig {
   turns?: number;
