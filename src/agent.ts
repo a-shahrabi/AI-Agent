@@ -11,7 +11,7 @@ interface AgentConfig {
   tools?: { name: string; parameters: z.AnyZodObject }[];
 }
 
-export const runAgent = async ({ turns = 100, userMessage, tools = [] }: AgentConfig) => {
+export const runAgent = async ({ turns = 10, userMessage, tools = [] }: AgentConfig) => {
   try {
     await addMessages([{ role: 'user', content: userMessage }]);
 
